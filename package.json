@@ -1,0 +1,25 @@
+{
+  "name": "react-mern-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenix15100/react-mern-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenix15100/react-mern-task/issues"
+  },
+  "homepage": "https://github.com/fenix15100/react-mern-task#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
