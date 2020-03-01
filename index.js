@@ -3,8 +3,22 @@
 
 const express = require('express');
 const path = require('path');
-
 const app = express();
+
+
+//Log all request to console (Midleware function)
+const logRequestStart = (req, res, next) => {
+  console.info(`${req.method} ${req.originalUrl}`) 
+  
+  res.on('finish', () => {
+      console.info(`${res.statusCode} ${res.statusMessage}; ${res.get('Content-Length') || 0}b sent`)
+  })
+  
+  next()
+}
+
+app.use(logRequestStart)
+
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
