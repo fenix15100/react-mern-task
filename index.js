@@ -1,8 +1,6 @@
 
 //https://dev.to/nburgess/creating-a-react-app-with-react-router-and-an-express-backend-33l3
 
-//fdhddsfjdsfs
-
 const express = require('express');
 const path = require('path');
 const app = express();
