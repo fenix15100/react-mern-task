@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/fenix15100/react-mern-task#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
